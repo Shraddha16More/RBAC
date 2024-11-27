@@ -7,6 +7,6 @@ Spring Boot: Backend framework for building the application.
 Spring Security: Provides authentication and authorization mechanisms.
 JWT: Token-based authentication and session management.
 MySQL Database: In-memory database for development and testing.
-Maven: Dependency management and build automation.
+Maven: Dependency management and build automation..
 
 
