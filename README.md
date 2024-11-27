@@ -27,7 +27,8 @@ Below is a summary of the API endpoints for the project:
 | POST        | /users/login     | Authenticate and get a token| `{ "username": "...", "password": "..." }` | `{ "token": "JWT_TOKEN" }` | No                     |
 | GET         | /users/all       | Get all users               | None                                | `[{"id":1,"username":"..." }]` | Yes                    |
 
-
+# Sample Screenshots
+![Screenshot (1)](https://github.com/user-attachments/assets/866f17f1-411f-4712-b0e7-46a508f00b4e)
 
 
 
