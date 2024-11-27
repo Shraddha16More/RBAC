@@ -8,5 +8,26 @@ This project implements an Authentication, Authorization, and Role-Based Access 
 4) MySQL Database: Database for development and testing.
 5) Maven: Dependency management and build automation.
 
+# Project Structure
+src/main/java/com/rbac/
+├── config/               # Security configurations
+├── controller/           # REST controllers
+├── entity/               # Entity classes for database
+├── repository/           # Repository interfaces for database access
+├── security/             # JWT utilities and filters
+└── Application.java      # Main Spring Boot application class
+
+
+## API Endpoints
+Below is a summary of the API endpoints for the project:
+
+| HTTP Method | Endpoint         | Description                 | Request Body                        | Response                    | Authorization Required |
+|-------------|------------------|-----------------------------|-------------------------------------|-----------------------------|------------------------|
+| POST        | /users/register  | Register a new user         | `{ "username": "...", "password": "..." }` | `{"message": "User registered successfully"}` | No                     |
+| POST        | /users/login     | Authenticate and get a token| `{ "username": "...", "password": "..." }` | `{ "token": "JWT_TOKEN" }` | No                     |
+| GET         | /users/all       | Get all users               | None                                | `[{"id":1,"username":"..." }]` | Yes                    |
+
+
+
 
 
